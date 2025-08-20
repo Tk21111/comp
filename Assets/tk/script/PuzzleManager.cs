@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PuzzleManager : MonoBehaviour
+public class PuzzleManager : GameManager
 {
     [SerializeField] private GameObject slotPrefab;
     [SerializeField] private Transform slotParent;
@@ -36,6 +36,8 @@ public class PuzzleManager : MonoBehaviour
             // Name it for debugging
             piece.name = "Piece_" + pieceSprite.name;
         }
+
+        puzzleCreated++;
     }
 
 }

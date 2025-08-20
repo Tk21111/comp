@@ -11,9 +11,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private CanvasGroup canvasGroup;
     private GameObject target;
 
-    private GameObject[] grids;
-    private GameObject[] jigsaws;
-
     private float grid = 1;
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -81,14 +78,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
 
 
-    //TODO 
-    //change this too check valid
-    // private void Awake()
-    // {
-    //     // Get tagged objects AFTER the scene has loaded
-    //     grids = GameObject.FindGameObjectsWithTag("Grid");
-    //     jigsaws = GameObject.FindGameObjectsWithTag("Jigsaw");
-    // }
+    
 
 
 
