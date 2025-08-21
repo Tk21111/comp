@@ -6,4 +6,6 @@ public class PuzzlePiece : MonoBehaviour
     public float rotate;
     public int pieceType;
 
+    public int jigsawGroup = -1;
+
 }

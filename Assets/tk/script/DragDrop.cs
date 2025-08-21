@@ -5,12 +5,11 @@ using UnityEngine.EventSystems;
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [SerializeField] private Canvas canvas;
-
+    public event Action<int , GameObject> snap;
     public float snapDistance = 1f;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     private GameObject target;
-
     private float grid = 1;
 
     public void OnBeginDrag(PointerEventData eventData)
